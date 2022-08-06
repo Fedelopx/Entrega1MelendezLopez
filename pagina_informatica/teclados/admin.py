@@ -1,3 +1,6 @@
 from django.contrib import admin
+from teclados.models import Teclados
 
-# Register your models here.
+@admin.register(Teclados)
+class teclados_admin(admin.ModelAdmin):
+    list_display = ['nombre', 'marca', 'modelo', 'mecanico', 'precio', 'is_active', 'stock']
