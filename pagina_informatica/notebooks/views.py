@@ -1,9 +1,10 @@
-from itertools import notebook
+from itertools import product
 from multiprocessing import context
 from django.shortcuts import render
 from notebooks.models import Notebooks
 
 def crear_notebook(request):
+
     nueva_notebook= Notebooks.objects.create(
         nombre= 'Notebook', 
         marca='Dell', 
