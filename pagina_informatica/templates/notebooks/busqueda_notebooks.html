@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+    Busqueda notebooks
+{% endblock %}
+
+{% block cambio_contenido %}
+
+    {% for notebook in notebooks %}
+
+    <div class="card" style="width: 18rem;">
+        <img src="https://i0.wp.com/edtechreviews.net/wp-content/uploads/2021/12/coderhouse_logo.png?resize=750%2C750&ssl=1" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title">{{notebook.nombre}}</h5>
+        <p class="card-text">Marca: {{notebook.marca}}</p>
+        <p class="card-text">Modelo: {{notebook.modelo}}</p>
+        <p class="card-text">Procesador: {{notebook.procesador}}</p>
+        <p class="card-text">Ram: {{notebook.ram}}</p>
+        <p class="card-text">Pulgadas: {{notebook.pulgadas}}</p>
+        <p class="card-text">almacenamiento: {{notebook.almacenamiento}}</p>
+        <p class="card-text">Precio: {{notebook.precio}}</p>
+        <p class="card-text">Stock: {{notebook.stock}}</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+    {% endfor %}
+
+{% endblock %}
