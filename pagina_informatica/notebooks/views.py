@@ -1,3 +1,4 @@
+from http.client import HTTPResponse
 from itertools import product
 from multiprocessing import context
 from django.shortcuts import render, redirect
@@ -38,7 +39,9 @@ def lista_notebooks(request):
     return render(request, 'notebooks/notebooks_lista.html', context=context)
 
 def busqueda_notebooks(request):
-    search = request.GET['search']
-    notebooks = Notebooks.objects.filter(name__icontains=search)
-    context = {'notebooks':notebooks}
-    return render(request, 'notebooks/busqueda_notebooks.html', context=context)
+    print (request.GET)
+    return HTTPResponse(request.GET)
+    # search = request.GET['search']
+    # notebooks = Notebooks.objects.filter(name__icontains=search)
+    # context = {'notebooks':notebooks}
+    # return render(request, 'notebooks/busqueda_notebooks.html', context=context)
