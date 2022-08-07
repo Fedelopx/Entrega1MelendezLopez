@@ -1,4 +1,4 @@
-from itertools import product
+from itertools import notebook
 from multiprocessing import context
 from django.shortcuts import render
 from notebooks.models import Notebooks
