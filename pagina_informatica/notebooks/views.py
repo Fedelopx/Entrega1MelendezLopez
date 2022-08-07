@@ -37,11 +37,3 @@ def lista_notebooks(request):
         'notebooks':notebooks
     }
     return render(request, 'notebooks/notebooks_lista.html', context=context)
-
-def busqueda_notebooks(request):
-    print (request.GET)
-    return HTTPResponse(request.GET)
-    # search = request.GET['search']
-    # notebooks = Notebooks.objects.filter(name__icontains=search)
-    # context = {'notebooks':notebooks}
-    # return render(request, 'notebooks/busqueda_notebooks.html', context=context)
