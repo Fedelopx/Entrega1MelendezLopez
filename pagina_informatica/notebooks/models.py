@@ -15,5 +15,7 @@ class Notebooks(models.Model):
     def __str__(self): 
         return self.nombre
 
-
+class Meta:
+    verbose_name='Notebook'
+    verbose_name_plural='Notebooks'
 
