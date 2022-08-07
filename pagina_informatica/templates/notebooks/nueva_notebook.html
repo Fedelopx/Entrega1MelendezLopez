@@ -1,9 +1,21 @@
-<h1>El nombre del producto es {{nueva_notebook.nombre}}</h1>
-<h1>La marca del producto es {{nueva_notebook.marca}}</h1>
-<h1>El modelo del producto es {{nueva_notebook.modelo}}</h1>
-<h1>El procesador del producto es {{nueva_notebook.procesador}}</h1>
-<h1>La capacidad de ram del producto es {{nueva_notebook.ram}}</h1>
-<h1>Las pulgadas del producto son {{nueva_notebook.pulgadas}}</h1>
-<h1>El almacenamiento del producto es {{nueva_notebook.almacenamiento}}</h1>
-<h2>El precio del producto es {{nueva_notebook.precio}}</h2>
-<h3> El Stock del producto es {{nueva_notebook.stock}}</h3>
+{% extends 'base.html' %}
+
+{% block titulo %}
+    nueva_notebook
+{% endblock %}
+
+{% block cambio_contenido %}
+<form action="" method="POST">
+    {% csrf_token %}
+    
+    <table>
+    
+        {{form.as_table}}
+    
+    </table>
+    
+    <p><input type="submit" value="Enviar"></p>
+    
+    </form>
+
+{% endblock %}
