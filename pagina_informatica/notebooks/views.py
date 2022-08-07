@@ -29,22 +29,6 @@ def crear_notebook(request):
         context = {'form':form}
         return render(request, 'notebooks/nueva_notebook.html', context=context)
 
-    # nueva_notebook= Notebooks.objects.create(
-    #     nombre= 'Notebook', 
-    #     marca='Dell', 
-    #     modelo='Inspiron', 
-    #     procesador='Intel Core i7',
-    #     ram=' 8GB',
-    #     pulgadas='15,6',
-    #     almacenamiento='1 TB SSD',
-    #     precio= 100405,
-    #     stock=20
-    #     )
-    # context={
-    #     'nueva_notebook':nueva_notebook
-    # }
-    # return render(request, 'notebooks/nueva_notebook.html', context=context)
-
 
 def lista_notebooks(request):
     notebooks = Notebooks.objects.all() 
@@ -53,3 +37,8 @@ def lista_notebooks(request):
     }
     return render(request, 'notebooks/notebooks_lista.html', context=context)
 
+def busqueda_notebooks(request):
+    search = request.GET['search']
+    notebooks = Notebooks.objects.filter(name__icontains=search)
+    context = {'notebooks':notebooks}
+    return render(request, 'notebooks/busqueda_notebooks.html', context=context)
