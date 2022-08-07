@@ -1,6 +1,6 @@
 from django.db import models
 
-class Notebooks (models.Model): 
+class Notebooks(models.Model): 
     nombre = models.CharField(max_length=200)
     marca = models.CharField(max_length=50)
     modelo = models.CharField(max_length=100)
