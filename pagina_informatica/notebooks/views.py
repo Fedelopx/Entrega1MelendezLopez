@@ -1,6 +1,3 @@
-from http.client import HTTPResponse
-from itertools import product
-from multiprocessing import context
 from django.shortcuts import render, redirect
 from notebooks.models import Notebooks
 from notebooks.forms import Formulario_notebooks
@@ -37,3 +34,9 @@ def lista_notebooks(request):
         'notebooks':notebooks
     }
     return render(request, 'notebooks/notebooks_lista.html', context=context)
+
+def search_notebooks(request):
+    search = request.GET['search']
+    notebooks = Notebooks.objects.filter(nombre__icontains=search)
+    context = {'notebooks':notebooks}
+    return render(request, 'notebooks/search_notebooks.html', context=context)
