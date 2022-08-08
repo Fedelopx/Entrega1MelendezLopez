@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+    Borrar Producto
+{% endblock %}
+
+{% block cambio_contenido %}
+
+<p>Nombre del producto: {{notebook.nombre}}</p>
+<p>Modelo del producto: {{notebook.modelo}}</p>
+<p>Precio del producto: {{notebook.precio}}</p>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    <input type="submit" value="Borrar">
+</form>
+
+{% endblock %}

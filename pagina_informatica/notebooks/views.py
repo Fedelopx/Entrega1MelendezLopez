@@ -40,3 +40,14 @@ def search_notebooks(request):
     notebooks = Notebooks.objects.filter(nombre__icontains=search)
     context = {'notebooks':notebooks}
     return render(request, 'notebooks/search_notebooks.html', context=context)
+
+
+def delete_notebook(request, pk):
+    if request.method == 'GET':
+        notebook = Notebooks.objects.get(pk=pk)
+        context = {'notebook':notebook}
+        return render(request, 'notebooks/delete_notebook.html', context=context)
+    elif request.method == 'POST':
+        notebook = Notebooks.objects.get(pk=pk)
+        notebook.delete()
+        return redirect(lista_notebooks)
