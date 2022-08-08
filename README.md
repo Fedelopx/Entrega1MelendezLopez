@@ -4,8 +4,8 @@
 - Django 4.0.4
 
 **Creadores:**
-**- Federico Melendez **
-**- Federico López**
+- Federico Melendez 
+- Federico López
 
 
 **Datos:**
