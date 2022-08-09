@@ -21,5 +21,5 @@ Nuestra página está creada para la venta de insumos informáticos asi como Not
 #### Información:
 Contamos con distintos tipos de insumos a la venta que se pueden agregar y modificar desde el admin.
 También añadimos un buscador, que por el momento solo funciona en la opción "Notebook".
-Desde http://127.0.0.1:8000/notebooks/crear-notebook/ a partir de un formulario, tenemos la opción de crear una publicación de una Notebook, una vez creada dicha publicación, nos redirecciona a la lista de dicho artículo.
+Podemos crear un articulo nuevo a partir de un formulario, una vez creada la publicación, nos redirecciona a la lista del artículo. Por ejemplo: desde http://127.0.0.1:8000/notebooks/crear-notebook/ creamos una nueva publicación de una notebook con sus distintas características.
 
