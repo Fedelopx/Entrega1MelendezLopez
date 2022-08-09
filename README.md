@@ -19,7 +19,7 @@
 Nuestro proyecto es un ecommerce creado para la venta de insumos informáticos asi como Notebooks, teclados y monitores.
 
 Utilizamos Herencias de HTML para poder realizarlo. Cuenta con 3 models que en un futuro podremos modificar o adicionar. Los cuales tambien cuentan con su formulario correspondiente.
-Ésta sería la primera parte, aún no está terminado.
+Ésta sería la primera version del sistema.Aún no está terminado.
 #### Información:
 Contamos con distintos tipos de insumos a la venta que se pueden agregar y modificar desde el admin.
 También añadimos un buscador, que por el momento solo funciona en la opción "Notebook".
