@@ -16,9 +16,9 @@
 
 #### Introducción: 
 Ésta página web es el trabajo final del curso de Python de la plataforma [Coderhouse](https://www.coderhouse.com.uy/?utm_term=coder&utm_campaign=0&utm_source=google_search_brand&utm_medium=cpc&gclid=CjwKCAjw3K2XBhAzEiwAmmgrApaOKUH3xckHPTtz6bv8fBl3-BFM6GCu1jZ-5263s5_ZduW0eYb_2xoCM-4QAvD_BwE "Coderhouse")(comisión #31090). Tratamos de abarcar todo lo dado durante el curso para realizarla.
-Nuestra proyecto es un ecommerce creado para la venta de insumos informáticos asi como Notebooks, teclados y monitores.
+Nuestro proyecto es un ecommerce creado para la venta de insumos informáticos asi como Notebooks, teclados y monitores.
 
-Utilizamos Herencias de HTML para poder realizarlo. Cuenta con 3 models que en un futuro podemos modificar o adicionar. Los cuales tambien cuentan con su formulario correspondiente.
+Utilizamos Herencias de HTML para poder realizarlo. Cuenta con 3 models que en un futuro podremos modificar o adicionar. Los cuales tambien cuentan con su formulario correspondiente.
 Ésta sería la primera parte, aún no está terminado.
 #### Información:
 Contamos con distintos tipos de insumos a la venta que se pueden agregar y modificar desde el admin.
